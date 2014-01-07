@@ -14,6 +14,189 @@
 
 @implementation KAIGame
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    Tower1Dangerzone.hidden = YES;
+    Tower2Dangerzone.hidden = YES;
+    Tower3Dangerzone.hidden = YES;
+    Tower4Dangerzone.hidden = YES;
+    Tower5Dangerzone.hidden = YES;
+    
+}
+
+-(IBAction)CancelNewTower:(id)sender{
+
+    NextWave.hidden = NO;
+    CancelNewTower.hidden = YES;
+    NewTower.hidden = NO;
+    Credits.text = [NSString stringWithFormat:@"%i", CreditsNumber];
+    
+    if(Tower1 == NO){
+        Tower1Space.hidden = YES;
+    }
+    if(Tower2 == NO){
+        Tower2Space.hidden = YES;
+    }
+    if(Tower3 == NO){
+        Tower3Space.hidden = YES;
+    }
+    if(Tower4 == NO){
+        Tower4Space.hidden = YES;
+    }
+    if(Tower5 == NO){
+        Tower5Space.hidden = YES;
+    }
+    
+}
+
+
+-(void)TowerPlaced{
+    NextWave.hidden = NO;
+    CancelNewTower.hidden = YES;
+    NewTower.hidden = NO;
+    Credits.text = [NSString stringWithFormat:@"%i", CreditsNumber];
+    
+    if(Tower1 == NO){
+        Tower1Space.hidden = YES;
+    }
+    if(Tower2 == NO){
+        Tower2Space.hidden = YES;
+    }
+    if(Tower3 == NO){
+        Tower3Space.hidden = YES;
+    }
+    if(Tower4 == NO){
+        Tower4Space.hidden = YES;
+    }
+    if(Tower5 == NO){
+        Tower5Space.hidden = YES;
+    }
+
+    
+    
+    
+}
+
+-(IBAction)Tower1Space:(id)sender{
+    if (Tower1 == YES){
+        Tower1Dangerzone.hidden = NO;
+        Tower2Dangerzone.hidden = YES;
+        Tower3Dangerzone.hidden = YES;
+        Tower4Dangerzone.hidden = YES;
+        Tower5Dangerzone.hidden = YES;
+
+    }
+    else{
+        UIImage *buttonImage = [UIImage imageNamed:@"Tower.png"];
+        [Tower1Space setImage:buttonImage forState:UIControlStateNormal];
+        [self.view addSubview:Tower1Space];
+
+        CreditsNumber = CreditsNumber - 15;
+        Tower1 = YES;
+        [self TowerPlaced];
+    }
+}
+
+-(IBAction)Tower2Space:(id)sender{
+    if (Tower2 == YES){
+        Tower2Dangerzone.hidden = NO;
+        Tower1Dangerzone.hidden = YES;
+        Tower3Dangerzone.hidden = YES;
+        Tower4Dangerzone.hidden = YES;
+        Tower5Dangerzone.hidden = YES;
+
+    }
+    else{
+        UIImage *buttonImage = [UIImage imageNamed:@"Tower.png"];
+        [Tower2Space setImage:buttonImage forState:UIControlStateNormal];
+        [self.view addSubview:Tower2Space];
+        
+        CreditsNumber = CreditsNumber - 15;
+        Tower2 = YES;
+        [self TowerPlaced];
+    }
+}
+
+-(IBAction)Tower3Space:(id)sender{
+    if (Tower3 == YES){
+        Tower3Dangerzone.hidden = NO;
+        Tower1Dangerzone.hidden = YES;
+        Tower2Dangerzone.hidden = YES;
+        Tower4Dangerzone.hidden = YES;
+        Tower5Dangerzone.hidden = YES;
+
+    }
+    else{
+        UIImage *buttonImage = [UIImage imageNamed:@"Tower.png"];
+        [Tower3Space setImage:buttonImage forState:UIControlStateNormal];
+        [self.view addSubview:Tower3Space];
+        
+        CreditsNumber = CreditsNumber - 15;
+        Tower3 = YES;
+        [self TowerPlaced];
+    }
+}
+
+-(IBAction)Tower4Space:(id)sender{
+    if (Tower4 == YES){
+        Tower4Dangerzone.hidden = NO;
+        Tower1Dangerzone.hidden = YES;
+        Tower2Dangerzone.hidden = YES;
+        Tower3Dangerzone.hidden = YES;
+        Tower5Dangerzone.hidden = YES;
+
+    }
+    else{
+        UIImage *buttonImage = [UIImage imageNamed:@"Tower.png"];
+        [Tower4Space setImage:buttonImage forState:UIControlStateNormal];
+        [self.view addSubview:Tower4Space];
+        
+        CreditsNumber = CreditsNumber - 15;
+        Tower4 = YES;
+        [self TowerPlaced];
+    }
+}
+
+-(IBAction)Tower5Space:(id)sender{
+    if (Tower5 == YES){
+        Tower5Dangerzone.hidden = NO;
+        Tower1Dangerzone.hidden = YES;
+        Tower2Dangerzone.hidden = YES;
+        Tower3Dangerzone.hidden = YES;
+        Tower4Dangerzone.hidden = YES;
+
+    }
+    else{
+        UIImage *buttonImage = [UIImage imageNamed:@"Tower.png"];
+        [Tower5Space setImage:buttonImage forState:UIControlStateNormal];
+        [self.view addSubview:Tower5Space];
+        
+        CreditsNumber = CreditsNumber - 15;
+        Tower5 = YES;
+        [self TowerPlaced];
+    }
+}
+
+
+-(IBAction)NewTower:(id)sender{
+    
+    if (CreditsNumber > 14){
+        NextWave.hidden = YES;
+        NewTower.hidden = YES;
+        CancelNewTower.hidden = NO;
+        
+        Tower1Space.hidden = NO;
+        Tower2Space.hidden = NO;
+        Tower3Space.hidden = NO;
+        Tower4Space.hidden = NO;
+        Tower5Space.hidden = NO;
+        
+    }
+    
+}
+
+
+
 
 -(void)Moving{
     
@@ -39,6 +222,7 @@
 
 -(IBAction)NextWave:(id)sender{
     
+    NewTower.hidden = YES;
     NextWave.hidden = YES;
     Tank.hidden = NO;
     Movement = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(Moving) userInfo:nil repeats:YES];
@@ -60,100 +244,49 @@
     TankX = 2;
     TankY = 0;
     
+    Tower1Space.hidden = YES;
+    Tower2Space.hidden = YES;
+    Tower3Space.hidden = YES;
+    Tower4Space.hidden = YES;
+    Tower5Space.hidden = YES;
+    Tower1Dangerzone.hidden = YES;
+    Tower2Dangerzone.hidden = YES;
+    Tower3Dangerzone.hidden = YES;
+    Tower4Dangerzone.hidden = YES;
+    Tower5Dangerzone.hidden = YES;
+    Tower1Bullet.hidden = YES;
+    Tower2Bullet.hidden = YES;
+    Tower3Bullet.hidden = YES;
+    Tower4Bullet.hidden = YES;
+    Tower5Bullet.hidden = YES;
+    
+    CreditsNumber = 15;
+    Credits.text = [NSString stringWithFormat:@"%i", CreditsNumber];
+    
+    Tower1 = NO;
+    Tower2 = NO;
+    Tower3 = NO;
+    Tower4 = NO;
+    Tower5 = NO;
+    
+    CancelNewTower.hidden = YES;
     
     
     
     
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-
- */
 
 @end

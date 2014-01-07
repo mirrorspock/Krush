@@ -12,7 +12,7 @@
 
 int TankX;
 int TankY;
-int CreditNumber;
+int CreditsNumber;
 
 BOOL Tower1;
 BOOL Tower2;
