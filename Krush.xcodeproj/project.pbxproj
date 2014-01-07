@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99916EB9187C7CDC00108835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EB8187C7CDC00108835 /* Foundation.framework */; };
+		99916EBB187C7CDC00108835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EBA187C7CDC00108835 /* CoreGraphics.framework */; };
+		99916EBD187C7CDC00108835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EBC187C7CDC00108835 /* UIKit.framework */; };
+		99916EC3187C7CDC00108835 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99916EC1187C7CDC00108835 /* InfoPlist.strings */; };
+		99916EC5187C7CDC00108835 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99916EC4187C7CDC00108835 /* main.m */; };
+		99916EC9187C7CDC00108835 /* KAIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99916EC8187C7CDC00108835 /* KAIAppDelegate.m */; };
+		99916ECC187C7CDC00108835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99916ECA187C7CDC00108835 /* Main.storyboard */; };
+		99916ECF187C7CDC00108835 /* KAIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99916ECE187C7CDC00108835 /* KAIViewController.m */; };
+		99916ED1187C7CDC00108835 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99916ED0187C7CDC00108835 /* Images.xcassets */; };
+		99916ED8187C7CDC00108835 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916ED7187C7CDC00108835 /* XCTest.framework */; };
+		99916ED9187C7CDC00108835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EB8187C7CDC00108835 /* Foundation.framework */; };
+		99916EDA187C7CDC00108835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EBC187C7CDC00108835 /* UIKit.framework */; };
+		99916EE2187C7CDC00108835 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99916EE0187C7CDC00108835 /* InfoPlist.strings */; };
+		99916EE4187C7CDC00108835 /* KrushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99916EE3187C7CDC00108835 /* KrushTests.m */; };
+		99916EF4187C7F0200108835 /* Bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EED187C7F0200108835 /* Bullet.png */; };
+		99916EF5187C7F0200108835 /* DangerZone.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EEE187C7F0200108835 /* DangerZone.png */; };
+		99916EF7187C7F0200108835 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EF0187C7F0200108835 /* Map.png */; };
+		99916EF9187C7F0200108835 /* TankUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EF2187C7F0200108835 /* TankUp.png */; };
+		99916EFA187C7F0200108835 /* Tower.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EF3187C7F0200108835 /* Tower.png */; };
+		99916EFC187C7F3200108835 /* Main Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EFB187C7F3200108835 /* Main Menu.png */; };
+		99916EFE187C809100108835 /* TankRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 99916EFD187C809100108835 /* TankRight.png */; };
+		99916F01187C82B200108835 /* KAIGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 99916F00187C82B200108835 /* KAIGame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99916EDB187C7CDC00108835 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99916EAD187C7CDC00108835 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99916EB4187C7CDC00108835;
+			remoteInfo = Krush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99916EB5187C7CDC00108835 /* Krush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99916EB8187C7CDC00108835 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		99916EBA187C7CDC00108835 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		99916EBC187C7CDC00108835 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		99916EC0187C7CDC00108835 /* Krush-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Krush-Info.plist"; sourceTree = "<group>"; };
+		99916EC2187C7CDC00108835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99916EC4187C7CDC00108835 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99916EC6187C7CDC00108835 /* Krush-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Krush-Prefix.pch"; sourceTree = "<group>"; };
+		99916EC7187C7CDC00108835 /* KAIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAIAppDelegate.h; sourceTree = "<group>"; };
+		99916EC8187C7CDC00108835 /* KAIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAIAppDelegate.m; sourceTree = "<group>"; };
+		99916ECB187C7CDC00108835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99916ECD187C7CDC00108835 /* KAIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KAIViewController.h; sourceTree = "<group>"; };
+		99916ECE187C7CDC00108835 /* KAIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KAIViewController.m; sourceTree = "<group>"; };
+		99916ED0187C7CDC00108835 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99916ED6187C7CDC00108835 /* KrushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99916ED7187C7CDC00108835 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		99916EDF187C7CDC00108835 /* KrushTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KrushTests-Info.plist"; sourceTree = "<group>"; };
+		99916EE1187C7CDC00108835 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99916EE3187C7CDC00108835 /* KrushTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KrushTests.m; sourceTree = "<group>"; };
+		99916EED187C7F0200108835 /* Bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bullet.png; sourceTree = "<group>"; };
+		99916EEE187C7F0200108835 /* DangerZone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DangerZone.png; sourceTree = "<group>"; };
+		99916EF0187C7F0200108835 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		99916EF2187C7F0200108835 /* TankUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TankUp.png; sourceTree = "<group>"; };
+		99916EF3187C7F0200108835 /* Tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tower.png; sourceTree = "<group>"; };
+		99916EFB187C7F3200108835 /* Main Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Main Menu.png"; sourceTree = "<group>"; };
+		99916EFD187C809100108835 /* TankRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TankRight.png; sourceTree = "<group>"; };
+		99916EFF187C82B200108835 /* KAIGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KAIGame.h; sourceTree = "<group>"; };
+		99916F00187C82B200108835 /* KAIGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KAIGame.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99916EB2187C7CDC00108835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99916EBB187C7CDC00108835 /* CoreGraphics.framework in Frameworks */,
+				99916EBD187C7CDC00108835 /* UIKit.framework in Frameworks */,
+				99916EB9187C7CDC00108835 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99916ED3187C7CDC00108835 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99916ED8187C7CDC00108835 /* XCTest.framework in Frameworks */,
+				99916EDA187C7CDC00108835 /* UIKit.framework in Frameworks */,
+				99916ED9187C7CDC00108835 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99916EAC187C7CDC00108835 = {
+			isa = PBXGroup;
+			children = (
+				99916EBE187C7CDC00108835 /* Krush */,
+				99916EDD187C7CDC00108835 /* KrushTests */,
+				99916EB7187C7CDC00108835 /* Frameworks */,
+				99916EB6187C7CDC00108835 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99916EB6187C7CDC00108835 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99916EB5187C7CDC00108835 /* Krush.app */,
+				99916ED6187C7CDC00108835 /* KrushTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99916EB7187C7CDC00108835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99916EB8187C7CDC00108835 /* Foundation.framework */,
+				99916EBA187C7CDC00108835 /* CoreGraphics.framework */,
+				99916EBC187C7CDC00108835 /* UIKit.framework */,
+				99916ED7187C7CDC00108835 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99916EBE187C7CDC00108835 /* Krush */ = {
+			isa = PBXGroup;
+			children = (
+				99916EC7187C7CDC00108835 /* KAIAppDelegate.h */,
+				99916EC8187C7CDC00108835 /* KAIAppDelegate.m */,
+				99916ECA187C7CDC00108835 /* Main.storyboard */,
+				99916ECD187C7CDC00108835 /* KAIViewController.h */,
+				99916ECE187C7CDC00108835 /* KAIViewController.m */,
+				99916EFF187C82B200108835 /* KAIGame.h */,
+				99916F00187C82B200108835 /* KAIGame.m */,
+				99916ED0187C7CDC00108835 /* Images.xcassets */,
+				99916EBF187C7CDC00108835 /* Supporting Files */,
+			);
+			path = Krush;
+			sourceTree = "<group>";
+		};
+		99916EBF187C7CDC00108835 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99916EFD187C809100108835 /* TankRight.png */,
+				99916EFB187C7F3200108835 /* Main Menu.png */,
+				99916EED187C7F0200108835 /* Bullet.png */,
+				99916EEE187C7F0200108835 /* DangerZone.png */,
+				99916EF0187C7F0200108835 /* Map.png */,
+				99916EF2187C7F0200108835 /* TankUp.png */,
+				99916EF3187C7F0200108835 /* Tower.png */,
+				99916EC0187C7CDC00108835 /* Krush-Info.plist */,
+				99916EC1187C7CDC00108835 /* InfoPlist.strings */,
+				99916EC4187C7CDC00108835 /* main.m */,
+				99916EC6187C7CDC00108835 /* Krush-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99916EDD187C7CDC00108835 /* KrushTests */ = {
+			isa = PBXGroup;
+			children = (
+				99916EE3187C7CDC00108835 /* KrushTests.m */,
+				99916EDE187C7CDC00108835 /* Supporting Files */,
+			);
+			path = KrushTests;
+			sourceTree = "<group>";
+		};
+		99916EDE187C7CDC00108835 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99916EDF187C7CDC00108835 /* KrushTests-Info.plist */,
+				99916EE0187C7CDC00108835 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99916EB4187C7CDC00108835 /* Krush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99916EE7187C7CDC00108835 /* Build configuration list for PBXNativeTarget "Krush" */;
+			buildPhases = (
+				99916EB1187C7CDC00108835 /* Sources */,
+				99916EB2187C7CDC00108835 /* Frameworks */,
+				99916EB3187C7CDC00108835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Krush;
+			productName = Krush;
+			productReference = 99916EB5187C7CDC00108835 /* Krush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99916ED5187C7CDC00108835 /* KrushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99916EEA187C7CDC00108835 /* Build configuration list for PBXNativeTarget "KrushTests" */;
+			buildPhases = (
+				99916ED2187C7CDC00108835 /* Sources */,
+				99916ED3187C7CDC00108835 /* Frameworks */,
+				99916ED4187C7CDC00108835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99916EDC187C7CDC00108835 /* PBXTargetDependency */,
+			);
+			name = KrushTests;
+			productName = KrushTests;
+			productReference = 99916ED6187C7CDC00108835 /* KrushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99916EAD187C7CDC00108835 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KAI;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mirror Spock";
+				TargetAttributes = {
+					99916ED5187C7CDC00108835 = {
+						TestTargetID = 99916EB4187C7CDC00108835;
+					};
+				};
+			};
+			buildConfigurationList = 99916EB0187C7CDC00108835 /* Build configuration list for PBXProject "Krush" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99916EAC187C7CDC00108835;
+			productRefGroup = 99916EB6187C7CDC00108835 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99916EB4187C7CDC00108835 /* Krush */,
+				99916ED5187C7CDC00108835 /* KrushTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99916EB3187C7CDC00108835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99916ED1187C7CDC00108835 /* Images.xcassets in Resources */,
+				99916EF4187C7F0200108835 /* Bullet.png in Resources */,
+				99916EFE187C809100108835 /* TankRight.png in Resources */,
+				99916EC3187C7CDC00108835 /* InfoPlist.strings in Resources */,
+				99916EFA187C7F0200108835 /* Tower.png in Resources */,
+				99916ECC187C7CDC00108835 /* Main.storyboard in Resources */,
+				99916EF5187C7F0200108835 /* DangerZone.png in Resources */,
+				99916EF7187C7F0200108835 /* Map.png in Resources */,
+				99916EFC187C7F3200108835 /* Main Menu.png in Resources */,
+				99916EF9187C7F0200108835 /* TankUp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99916ED4187C7CDC00108835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99916EE2187C7CDC00108835 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99916EB1187C7CDC00108835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99916ECF187C7CDC00108835 /* KAIViewController.m in Sources */,
+				99916EC9187C7CDC00108835 /* KAIAppDelegate.m in Sources */,
+				99916EC5187C7CDC00108835 /* main.m in Sources */,
+				99916F01187C82B200108835 /* KAIGame.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99916ED2187C7CDC00108835 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99916EE4187C7CDC00108835 /* KrushTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99916EDC187C7CDC00108835 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99916EB4187C7CDC00108835 /* Krush */;
+			targetProxy = 99916EDB187C7CDC00108835 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99916EC1187C7CDC00108835 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99916EC2187C7CDC00108835 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		99916ECA187C7CDC00108835 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99916ECB187C7CDC00108835 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99916EE0187C7CDC00108835 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99916EE1187C7CDC00108835 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99916EE5187C7CDC00108835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		99916EE6187C7CDC00108835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99916EE8187C7CDC00108835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Krush/Krush-Prefix.pch";
+				INFOPLIST_FILE = "Krush/Krush-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		99916EE9187C7CDC00108835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Krush/Krush-Prefix.pch";
+				INFOPLIST_FILE = "Krush/Krush-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		99916EEB187C7CDC00108835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Krush.app/Krush";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Krush/Krush-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KrushTests/KrushTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		99916EEC187C7CDC00108835 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Krush.app/Krush";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Krush/Krush-Prefix.pch";
+				INFOPLIST_FILE = "KrushTests/KrushTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99916EB0187C7CDC00108835 /* Build configuration list for PBXProject "Krush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99916EE5187C7CDC00108835 /* Debug */,
+				99916EE6187C7CDC00108835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99916EE7187C7CDC00108835 /* Build configuration list for PBXNativeTarget "Krush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99916EE8187C7CDC00108835 /* Debug */,
+				99916EE9187C7CDC00108835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99916EEA187C7CDC00108835 /* Build configuration list for PBXNativeTarget "KrushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99916EEB187C7CDC00108835 /* Debug */,
+				99916EEC187C7CDC00108835 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99916EAD187C7CDC00108835 /* Project object */;
+}
