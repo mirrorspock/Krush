@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9950DEAE187C8E6100C0736F /* TowerSpace.png in Resources */ = {isa = PBXBuildFile; fileRef = 9950DEAD187C8E6100C0736F /* TowerSpace.png */; };
 		99916EB9187C7CDC00108835 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EB8187C7CDC00108835 /* Foundation.framework */; };
 		99916EBB187C7CDC00108835 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EBA187C7CDC00108835 /* CoreGraphics.framework */; };
 		99916EBD187C7CDC00108835 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99916EBC187C7CDC00108835 /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9950DEAD187C8E6100C0736F /* TowerSpace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TowerSpace.png; path = ../../../Desktop/Krush/TowerSpace.png; sourceTree = "<group>"; };
 		99916EB5187C7CDC00108835 /* Krush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Krush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99916EB8187C7CDC00108835 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99916EBA187C7CDC00108835 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +147,7 @@
 		99916EBF187C7CDC00108835 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9950DEAD187C8E6100C0736F /* TowerSpace.png */,
 				99916EFD187C809100108835 /* TankRight.png */,
 				99916EFB187C7F3200108835 /* Main Menu.png */,
 				99916EED187C7F0200108835 /* Bullet.png */,
@@ -257,6 +260,7 @@
 			files = (
 				99916ED1187C7CDC00108835 /* Images.xcassets in Resources */,
 				99916EF4187C7F0200108835 /* Bullet.png in Resources */,
+				9950DEAE187C8E6100C0736F /* TowerSpace.png in Resources */,
 				99916EFE187C809100108835 /* TankRight.png in Resources */,
 				99916EC3187C7CDC00108835 /* InfoPlist.strings in Resources */,
 				99916EFA187C7F0200108835 /* Tower.png in Resources */,
@@ -495,6 +499,7 @@
 				99916EE9187C7CDC00108835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99916EEA187C7CDC00108835 /* Build configuration list for PBXNativeTarget "KrushTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +508,7 @@
 				99916EEC187C7CDC00108835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
