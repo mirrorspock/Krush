@@ -14,17 +14,56 @@
 
 @implementation KAIGame
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
+
+-(void)Moving{
+    
+    Tank.center = CGPointMake(Tank.center.x + TankX, Tank.center.y + TankY);
+    
+    if (CGRectIntersectsRect(Tank.frame, Corner1.frame)){
+        
+        Tank.image = [UIImage imageNamed:@"TankUp.png"];
+        TankX = 0;
+        TankY = -2;
     }
-    return self;
+    if (CGRectIntersectsRect(Tank.frame, Corner2.frame)){
+
+        Tank.image = [UIImage imageNamed:@"TankRight.png"];
+        TankX = 2;
+        TankY = 0;
+    }
+    
 }
+
+
+
+
+-(IBAction)NextWave:(id)sender{
+    
+    NextWave.hidden = YES;
+    Tank.hidden = NO;
+    Movement = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(Moving) userInfo:nil repeats:YES];
+    
+}
+
+
+
+
 
 - (void)viewDidLoad
 {
+    
+    Corner1.hidden = YES;
+    Corner2.hidden = YES;
+    Tank.hidden = YES;
+    Tank.center = CGPointMake(-26, 200);
+    
+    TankX = 2;
+    TankY = 0;
+    
+    
+    
+    
+    
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.

@@ -8,7 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KAIGame : UITableViewController
+
+
+int TankX;
+int TankY;
+
+
+@interface KAIGame : UIViewController
+
+{
+    IBOutlet UIImageView *Tank;
+    IBOutlet UIImageView *Corner1;
+    IBOutlet UIImageView *Corner2;
+    
+    IBOutlet UIButton * NextWave;
+    
+    NSTimer *Movement;
+    
+}
+
+-(IBAction)NextWave:(id)sender;
+-(void)Moving;
+
 
 
 @end
